@@ -1,0 +1,154 @@
+#home {
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#cta {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title {
+    font-size: 4.5rem;
+    color: black;;
+}
+
+#cta .title span {
+    color: red;
+}
+
+#cta .description {
+    font-size: 2.5rem;
+    color: black;
+}
+
+#cta_buttons {
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a {
+    text-decoration: none;
+    color: white;
+    font: 1.3rem;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button {
+    box-shadow: none;
+}
+
+
+
+#banner img {
+    height: 100%;
+    width: fit-content;
+}
+
+.shape {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 0% 0% 40%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.containerMapa{
+    display: grid;
+    place-items: center; /* Centraliza horizontal e verticalmente */
+    width: 100%; /* Ocupa toda a largura */
+    padding: 0px 20px;
+}
+
+
+.visitar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 14px;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+.endereco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #333;
+}
+
+
+iframe{
+    border: 0;
+    width: 50%; /* O iframe do mapa ocupa 100% da largura */
+    height: 600px; /* Altura ajustada para mobile */
+    border-radius: 15px;
+
+}
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape {
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    iframe{
+        border: 0;
+        width: 90%; /* O iframe do mapa ocupa 100% da largura */
+        height: 600px; /* Altura ajustada para mobile */
+        
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #phone_button button {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Os itens ficam em coluna */
+      align-items: center; /* Centraliza os itens no eixo principal */
+      gap: 10px; /* Reduz o espaço entre texto e mapa */
+    }
+  
+    .text, .map {
+      max-width: 100%; /* Ocupam 100% da largura */
+      text-align: center; /* Centraliza o texto e o mapa */
+    }
+
+  }
