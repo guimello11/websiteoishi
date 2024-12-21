@@ -18,6 +18,8 @@ footer {
 .social-media-buttons-footer{
     background-color: black;
     padding: 1rem 8rem;
+    display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
