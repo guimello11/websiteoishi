@@ -39,16 +39,17 @@ header {
     gap: 48px;
 }
 
+.nav-item active:hover {
+box-shadow: 5px 5px 5px 5px black;
+}
+
 .nav-item a {
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: 450;
 }
 
-.nav-item.active a {
-    color: black;
-    border-bottom: 3px solid black;
-}
+
 
 #mobile_btn {
     display: none;
